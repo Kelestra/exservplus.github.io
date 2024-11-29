@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"content="Carlos Lopez">
+    <title>Contaco - Serviplus </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0;
+}
+
+.logo p {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #005bb5;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e6f2ff;
+}
+
+.contacto {
+    width: 50%;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contacto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    margin-bottom: 20px;
+}
+
+.contacto label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.contacto button {
+    padding: 10px 20px;
+    background-color: #005bb5;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.contacto button:hover {
+    background-color: #003f7f;
+}
+
+.info {
+    width: 40%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.info h3, .info h4 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0073e6;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Serviplus</h1>
+            <p>Más que limpieza...</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nuestros Clientes</a></li>
+                <li><a href="#">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contacto">
+            <h2>Contáctenos</h2>
+            <p>No dude en enviarnos un mensaje.</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Restablecer</button>
+            </form>
+        </section>
+
+        <aside class="info">
+            <h3>Serviplus S.A</h3>
+            <p>Tel: (505) 2266-6578 Cel: 89243728</p>
+            <p>Email: serviplus@yahoo.com</p>
+            <p>www.serviplus.com</p>
+            <p>Bolonia, Oficinas Aval Card (Citi) 1 Cuadra al oeste Managua, Nicaragua</p>
+            <p>Gerente General: Francella Muñoz Moncada</p>
+
+            <h4>Nuestra Ubicación</h4>
+            <div class="mapa">
+                <!-- Aquí puedes incrustar un iframe de Google Maps -->
+                <iframe src="https://maps.google.com/maps?q=managua%20nicaragua&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copyright © 2013 Serviplus S.A</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+</body>
+</html>

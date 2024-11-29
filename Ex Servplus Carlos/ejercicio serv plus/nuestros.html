@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"content="Carlos Lopez">
+    <title>Nuestros Clientes</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            font-size: 16px;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+        }
+
+      
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0d5ba1;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #57a8ef;
+        }
+
+       
+        .content {
+            padding: 30px;
+            background-color: #6dc4ff;
+            text-align: center;
+        }
+        .content h2 {
+            color: #0d5ba1;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .content p {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+       
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .clients-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .clients-grid img:hover {
+            transform: scale(1.05);
+        }
+
+       
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0d5ba1;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <img src="images/logotipo.jpg" alt="Serviplus Logo">
+    </header>
+
+   
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="index.html">Nuestros Clientes</a></li>
+            <li><a href="#">Contáctenos</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="content">
+        <h2>Nuestros Clientes</h2>
+        <p>La Calidad del servicio se traduce directamente en la satisfacción de nuestros clientes:</p>
+        <img src="images/cliente.jpg" alt="Handshake" style="max-width: 100%; border-radius: 5px; margin-bottom: 20px;">
+        
+     
+        <div class="clients-grid">
+            <img src="images/01.jpg" alt="Don Pan">
+            <img src="images/02.jpg" alt="Buffalo Wings">
+            <img src="images/03.jpg" alt="Embajada de Finlandia">
+            <img src="images/04.jpg" alt="Sitel">
+            <img src="images/05.jpg" alt="Assa">
+            <img src="images/06.jpg" alt="Invercasa">
+            <img src="images/07.jpg" alt="Accedo">
+            <img src="images/08.jpg" alt="Importaciones Fuentes">
+            <img src="images/09.jpg" alt="Total Gym">
+            <img src="images/10.jpg" alt="Nicafar">
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>Copyright © 2013 Serviplus S.A</p>
+    </footer>
+</body>
+</html>
